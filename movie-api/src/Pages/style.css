@@ -1,0 +1,266 @@
+.searchSection {
+    padding: 80px 0px 60px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+.form-control-underlined {
+    border-width: 0;
+    border-bottom-width: 1px;
+    border-radius: 0;
+    padding-left: 0;
+}
+
+/* Movie Section */
+.moviesSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+}
+
+.card img {
+    height: 360px;
+}
+
+
+
+
+
+
+
+.movie-card {
+    width: 280px;
+    height: 400px;
+    border-radius: 35px;
+    position: relative;
+    box-shadow: 0 0 50px #0F274D;
+}
+
+
+.movie-card .content-card,
+.movie-card .watch-card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+.movie-card .watch-card {
+    background: #FC217B;
+    z-index: -1;
+}
+
+.movie-card .watch-card button {
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    transform: translate(-50%, 0%);
+    border: none;
+    outline: none;
+    background: none;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+
+
+.movie-card .content-card {
+    padding: 20px 25px;
+    transition: all 0.5s ease;
+}
+
+
+
+.movie-card .content-card:hover {
+    top: -50px;
+}
+
+
+.movie-card .content-card:hover img {
+    transform: scale(1.2);
+}
+
+.movie-card .content-card img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    transition: all 0.5s ease;
+}
+
+
+.movie-card .content-card .shadow {
+    width: 100%;
+    height: 120px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #0F274D;
+    box-shadow: 0 0 10px 20px #0F274D !important;
+    filter: blur(10px);
+}
+
+.movie-card .content-card .content {
+    position: absolute;
+    color: #eee;
+    bottom: 20px;
+}
+
+
+.movie-card .content-card .content h1 {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+
+.movie-card .content-card .content .date {
+    color: #fff8f8;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: .75em;
+}
+
+
+.movie-card .content-card .content b {
+    margin: 5px 0;
+    display: inline-block;
+}
+
+.movie-card .content-card .content .stars {
+    margin: 8px 0;
+    font-size: .9em;
+    color: #aaa;
+}
+
+.movie-card .content-card .content .stars .checked {
+    color: orange;
+}
+
+
+.movie-card .content-card .content .hex-tag {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+
+.movie-card .content-card .content .hex-tag .tag {
+    background: rgba(200, 200, 200, .2);
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: .85em;
+}
+
+
+.movie-card .content-card .content .fa-angle-up,
+.movie-card .content-card .content .fa-angle-down {
+    position: absolute;
+    left: 50%;
+    transform: translate(0%, -50%);
+    font-size: 1.8em;
+    color: #aaa;
+}
+
+
+
+
+/* Loading */
+.loadingImg {
+    width: 200px;
+    text-align: center;
+}
+
+
+/* Single Movie css code  */
+
+.movie-section {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--text-clr);
+    display: grid;
+    place-items: center;
+    background: #0b2740;
+}
+
+
+.single-movie-card {
+    min-width: 30rem;
+    width: 50vw;
+    padding: 1rem;
+    background-color: var(--bg-clr);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 0.6fr 1fr;
+    align-items: center;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 2rem;
+    background-color: #f4f4f4;
+}
+
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+.single-movie-card img {
+    width: 100%;
+    height: 360px !important;
+    margin: 0;
+    border-radius: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-radius: 0;
+    max-height: 50rem;
+    height: auto;
+}
+
+.single-movie-card .title {
+    font-size: 28px;
+    color: var(--text-clr);
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 20px;
+}
+.country{
+    margin-bottom: 40px;
+}
+
+.back-btn {
+
+    padding: 15px 25px;
+    /* margin-top: 20px !important; */
+    background: #0F274D;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+
+}
+.back-btn:hover{
+    background: #04142d;
+    color: #fff;
+
+}
